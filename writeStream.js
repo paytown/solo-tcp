@@ -1,8 +1,7 @@
 const fs = require('fs');
 
 const ws = fs.createWriteStream('./spot.json', {
-  // flags: 'a' - APPENDS
-  // flags: 'w' - OVERWRITES (DEFAULT)
+  flags: 'a'
 });
 
 ws.write('{');
